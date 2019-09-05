@@ -122,6 +122,7 @@ class testAndres {
 		
 		System.out.println("validando funcion numero");
 		System.out.println(numero('3'));
+		System.out.println(numero('5'));
 
 	}
 
