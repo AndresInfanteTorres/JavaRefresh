@@ -156,7 +156,7 @@ class testAndres {
 		System.out.println(numero('5'));
 		
 		//call to recursive function
-		System.out.println("Recursive Function");
+		System.out.println("Recursive method to do the factorial of a number");
 		System.out.println(recursivefunction(4));
 		
 		//call a method to check empty spaces
