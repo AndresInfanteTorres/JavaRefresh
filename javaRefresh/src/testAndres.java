@@ -91,6 +91,37 @@ class testAndres {
 		return false;
 	}
 	
+	private static long recursivefunction(int num) {
+		if(num>1) {
+			return num * recursivefunction(num -1);
+			
+		}
+		else
+			return 1;
+		
+		
+	}
+	private static void emptySpaces(String givenString) {
+		int positions[] = new int[givenString.length()];
+		int band=0;
+		for (int i=0;i<givenString.length();i++) {
+			if(givenString.charAt(i) == ' ') {
+				positions[band]=i;
+				band+=1;
+			}
+			
+		}
+		
+		System.out.println("The String "+ " * " +givenString + " * " +"has spaces in this positions: ");
+		for (int i=0;i<=band;i++) {
+			if(positions[i]!=0) {
+				System.out.println(positions[i]);
+			}
+			
+		}
+		
+	}
+	
 	
 
 	public static void main(String[] args) {
@@ -123,6 +154,15 @@ class testAndres {
 		System.out.println("validando funcion numero");
 		System.out.println(numero('3'));
 		System.out.println(numero('5'));
+		
+		//call to recursive function
+		System.out.println("Recursive Function");
+		System.out.println(recursivefunction(4));
+		
+		//call a method to check empty spaces
+		String andy="Andres esta programando";
+		System.out.println("Call of metohd to check empty spaces");
+		emptySpaces(andy);
 
 	}
 
