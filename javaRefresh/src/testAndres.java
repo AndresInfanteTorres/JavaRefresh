@@ -136,9 +136,10 @@ class testAndres {
 			}
 			if (times>max) {
 				max=times;
-				times=0;
+				
 				letter=givenString.charAt(i);
 			}
+			times=0;
 		}
 		
 		System.out.println("The most repited letter is *"+ letter+ "* it repites "+ times + "times.");
