@@ -122,6 +122,29 @@ class testAndres {
 		
 	}
 	
+	private static void mostFrecuent(String givenString) {
+		
+		int max=0;
+		int times=0;
+		char letter = ' ';
+		for (int i=0;i<givenString.length();i++) {
+			for (int j=0;j<(givenString.length());j++) {
+				if (givenString.charAt(i)==givenString.charAt(j)) {
+					times+=1;
+				}
+				
+			}
+			if (times>max) {
+				max=times;
+				times=0;
+				letter=givenString.charAt(i);
+			}
+		}
+		
+		System.out.println("The most repited letter is *"+ letter+ "* it repites "+ times + "times.");
+		
+	}
+	
 	
 
 	public static void main(String[] args) {
@@ -163,6 +186,10 @@ class testAndres {
 		String andy="Andres esta programando";
 		System.out.println("Call of metohd to check empty spaces");
 		emptySpaces(andy);
+		
+		//most frecuent letter and how many times it repits
+		System.out.println("Calling the method frecuent method");
+		mostFrecuent("andresaslfraaa");
 
 	}
 
